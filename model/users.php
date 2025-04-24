@@ -17,6 +17,7 @@ class users extends conn{
                 email VARCHAR(250) NOT NULL UNIQUE,
                 password TEXT NOT NULL,
                 is_premium ENUM('true', 'false') NOT NULL DEFAULT 'false',
+                is_suspen ENUM('true', 'false') NOT NULL DEFAULT 'false',
                 user_upline_id VARCHAR(6) DEFAULT NULL,
                 regist_date TEXT NOT NULL,
                 FOREIGN KEY (user_upline_id) REFERENCES $this->table_name(user_id)

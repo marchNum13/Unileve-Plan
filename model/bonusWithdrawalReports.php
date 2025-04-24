@@ -13,6 +13,7 @@ class bonusWithdrawalReports extends conn{
                 id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 user_id VARCHAR(6) NOT NULL,
                 amount DOUBLE NOT NULL,
+                address TEXT NOT NULL,
                 status ENUM('pending','accepted','rejected') NOT NULL 'pending',
                 date TEXT NOT NULL,
                 FOREIGN KEY (user_id) REFERENCES user(user_id)
