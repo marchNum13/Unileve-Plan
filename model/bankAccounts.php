@@ -12,8 +12,8 @@ class bankAccounts extends conn{
             $sql = "CREATE TABLE $this->table_name (
                 id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                 user_id VARCHAR(6) NOT NULL,
-                name TEXT NOT NULL,
-                address TEXT NOT NULL,
+                name TEXT NOT NULL DEFAULT 'none',
+                address TEXT NOT NULL DEFAULT 'none',
                 FOREIGN KEY (user_id) REFERENCES user(user_id)
             )";
             // EXECUTE THE QUERY
