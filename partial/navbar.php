@@ -37,17 +37,16 @@
                             </a>
                         </li>
                         <hr class="dropdown-divider">
+                        <li>
+                            <a class="dropdown-item" href="authentication-signup-with-header-footer.html">
+                                <div class="d-flex align-items-center">
+                                    <div class=""><i class="bi bi-box-arrow-left text-danger"></i></div>
+                                    <div class="ms-3"><span class="text-danger">Logout</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a class="dropdown-item" href="authentication-signup-with-header-footer.html">
-                        <div class="d-flex align-items-center">
-                            <div class=""><i class="bi bi-box-arrow-left text-danger"></i></div>
-                            <div class="ms-3"><span class="text-danger">Logout</span></div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            </li>
             </ul>
         </div>
     </nav>
